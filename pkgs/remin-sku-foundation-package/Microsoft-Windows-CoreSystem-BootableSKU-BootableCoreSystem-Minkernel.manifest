@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-CoreSystem-BootableSKU-BootableCoreSystem-Minkernel" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <file name="ConIoSrv.dll" destinationPath="$(runtime.system32)\" sourceName="ConIoSrv.dll" sourcePath=".\" importPath="$(build.nttree)\mincore\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">4BjSOrUQwynHUP5jRzLOBBTmVkGH0536Na050VM6Exo=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="apisetschema.dll" destinationPath="$(runtime.system32)\" sourceName="apisetschema.dll" sourcePath=".\" importPath="$(build.nttree)\mincore\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">arrB6oMnWxNNh6LLOIMWguf6uvWVWHjs4d/cSf7/+sY=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <memberships>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories.Services" version="10.0.18945.1001" publicKeyToken="31bf3856ad364e35" typeName="Service" />
+      <categoryInstance subcategory="condrv">
+        <serviceData name="condrv" displayName="Console Driver" errorControl="normal" start="boot" type="kernelDriver" group="Base" imagePath="System32\drivers\condrv.sys" />
+      </categoryInstance>
+    </categoryMembership>
+  </memberships>
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager">
+      <registryValue name="NumberOfInitialSessions" valueType="REG_DWORD" value="1" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\SubSystems">
+      <registryValue name="Windows" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,3072,512 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=coniosrv:ServerDllInitialization,2 ProfileControl=Off MaxRequestThreads=16" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ConKbd">
+      <registryValue name="Headless" valueType="REG_DWORD" value="0" />
+      <registryValue name="UseBGFX" valueType="REG_DWORD" value="1" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa">
+      <registryValue name="CreatePolicyDatabaseOnFirstBoot" valueType="REG_DWORD" value="1" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\CodePage">
+      <registryValue name="ACP" valueType="REG_SZ" value="65001" />
+      <registryValue name="OEMCP" valueType="REG_SZ" value="65001" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon">
+      <registryValue name="FirstUserAccount" valueType="REG_SZ" value="LocalSystem" />
+      <registryValue name="ForceUnlockLogon" valueType="REG_DWORD" value="1" />
+      <registryValue name="Shell" valueType="REG_SZ" value="cmd.exe" />
+      <registryValue name="ShellCritical" valueType="REG_DWORD" value="0" />
+      <registryValue name="ShellInfrastructure" valueType="REG_SZ" value="" />
+      <registryValue name="UserMgrLaunchShell" valueType="REG_DWORD" value="1" />
+      <registryValue name="UserMgrRestartShellOnCrash" valueType="REG_DWORD" value="1" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WSMAN\Listener\*+HTTP">
+      <registryValue name="Port" valueType="REG_DWORD" value="0x00001761" />
+      <registryValue name="uriprefix" valueType="REG_SZ" value="wsman" />
+      <securityDescriptor name="WSMAN_LISTENER_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Server\ServerLevels">
+      <registryValue name="NanoServer" valueType="REG_DWORD" value="1" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\LanmanWorkstation\Parameters">
+      <registryValue name="Domain" valueType="REG_SZ" value="WORKGROUP" />
+      <registryValue name="DomainId" valueType="REG_SZ" value="" />
+    </registryKey>
+    <!-- from Microsoft-Windows-Minwin-State-Network-TCPIP -->
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Parameters">
+      <registryValue name="DeadGWDetectDefault" valueType="REG_DWORD" value="0x00000001" />
+      <registryValue name="DontAddDefaultGatewayDefault" valueType="REG_DWORD" value="0x00000000" />
+      <registryValue name="EnableICMPRedirect" valueType="REG_DWORD" value="0x00000001" />
+      <registryValue name="Hostname" valueType="REG_SZ" value="minwinpc" />
+      <registryValue name="NV Hostname" valueType="REG_SZ" value="minwinpc" />
+      <registryValue name="UseDomainNameDevolution" valueType="REG_DWORD" value="0x00000001" />
+      <registryValue name="Domain" valueType="REG_SZ" value="" />
+      <registryValue name="SearchList" valueType="REG_SZ" value="" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\tcpip\Parameters\DNSRegisteredAdapters" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\tcpip\Performance">
+      <registryValue name="Close" valueType="REG_SZ" value="CloseTcpIpPerformanceData" />
+      <registryValue name="Collect" valueType="REG_SZ" value="CollectTcpIpPerformanceData" />
+      <registryValue name="Library" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\Perfctrs.dll" />
+      <registryValue name="Object List" valueType="REG_SZ" value="502 510 546 548 582 638 658 1530 1532 1534" />
+      <registryValue name="Open" valueType="REG_SZ" value="OpenTcpIpPerformanceData" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)(A;;GRGX;;;S-1-15-2-1)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WSMAN_LISTENER_SDDL" sddl="D:P(A;CI;GA;;;BA)(A;CI;GR;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970)(A;CI;GR;;;S-1-5-80-4059739203-877974739-1245631912-527174227-2996563517)S:P(AU;CISAFA;GW;;;WD)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+</assembly>

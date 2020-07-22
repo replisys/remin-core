@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" description="$(resourceString.description)" displayName="$(resourceString.displayName)" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." company="Microsoft" creationTimeStamp="2019-07-21T03:24:02" lastUpdateTimeStamp="2019-07-21T03:24:02" buildFilter="">
+  <assemblyIdentity name="ReMin-SKU-Foundation-LP" version="10.0.1337.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Autochk.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Winsrv.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-DriverFrameworks-UserMode.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-System-User-Service.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-SHCore.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Winsock-Legacy.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Web-Services-for-Management-Core.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WinrsPlugins.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Command-Line-Utility.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Command-Line-Utility-Base.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-Svc.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-wbemcore-dll.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Mof.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Scripting.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-stdprov-Provider.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Text-Encoding.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-time-Provider.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-WDM-Provider.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Win32-Provider-Cimwin32-dll.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-wmitomi-dll.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-mi-dll.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-miutils-dll.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-Register-CimProvider-exe.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-NetAdapterCim.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-TCPIP-WMIv2Provider.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WhHelper.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructure-Minkernel.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureConsumerCore.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureExecutable.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructure.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureConsumer.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureNonExecutable.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+
+  <!-- custom stuff -->
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-CoreSystem-LegacyPack-Base.Resources" version="10.0.18945.1001" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <deployment xmlns="urn:schemas-microsoft-com:asm.v3" />
+</assembly>

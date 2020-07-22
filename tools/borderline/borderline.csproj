@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="ManagedWimLib" Version="2.0.1" />
+      <Content Include="manifest.bin" CopyToOutputDirectory="Always"/>
+    </ItemGroup>
+</Project>

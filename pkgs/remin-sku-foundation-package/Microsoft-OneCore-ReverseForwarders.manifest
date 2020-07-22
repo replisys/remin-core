@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-OneCore-ReverseForwarders" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <file name="advapi32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="advapi32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">gI+ZyAtEX0TCOB9dZ8QeE1idULuJTysHI1i9sIhu8A4=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="comctl32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="comctl32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">MjlLGeAMQoeucuKlAYwxd2XIaCjVBAp0wKI/IBCsE6g=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="comdlg32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="comdlg32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">bXfUQ1U5qAr7QRNQq0hlSSmL/4cKIMHtA0Je6DztTC0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="cryptui.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="cryptui.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">WUeUdo8ksYGTa2GB77vJ3bQAa7QknaBb8vgnbdZeCYE=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="dwmapi.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="dwmapi.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">NxDQC6ESLgUPCtuDrcZZtDEjAG1Qe7LDCK2m3an+ycI=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="dxcore.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="dxcore.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">DFX+uGpg46SjdqQYc6Rg2/GOZkPS7sIIRkQJGzJlkco=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="fontsub.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="fontsub.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">r+YVRUvBOI+AZC49wPBTXNO/tu3ILfaJkqpKcCtoctg=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="gdi32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="gdi32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">rA/j4s6deWn6ojX6ZHn9gNEAnwYykT+p+QDYFIgdQDc=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="imm32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="imm32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">QL8kGX2beZPi5mXqSOpHT/CAjmxJcQBOCnCdx/K8UX4=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="kernel32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="kernel32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">5GFW1uE3NwdH3mzR09Mdjk4mLrWLDl/oGn07FJYnlms=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="ole32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="ole32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">JrQpnRlLZoh0O3QS/+PKt9z3qZ4d4fcmE7NyS9zdJZs=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="oleacc.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="oleacc.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">rkqPNQT8TNS/2sv/JWOnnlRKKdLuiWjRNVLFMJIbxdo=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="PerceptionDevice.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="PerceptionDevice.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">sxMxj4MgCgGrmrElGQpCu9osFSNNj3l9yNI9orZ0PmQ=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="prntvpt.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="prntvpt.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">eVuvUBKsD96/UVpv7d07j7LkvOKEIFRWE8ng6nQUjRs=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="psapi.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="psapi.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">8huf7Z8TKMsi0M3zsrlvzxnrrcePJMo4TEXDIP4zRHw=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="rstrtmgr.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="rstrtmgr.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">SC9QRmVxkOLLwD5NMLJxPBPGyDShAoc+m2YNcRqHSlo=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="setupapi.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="setupapi.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">QMoqnFKONgDsSgrUgZSxVi4U92z+DwV+bfvWMWwcfl0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="user32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="user32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">84daNF3g24yILCjn5F3jlsK99bHzYRBjesQW3ZJWQo4=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="secur32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="secur32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">4v3eLHl0itMrMomPw0Dz0Er6HdVHvPKvr0P2phQpj5c=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="shell32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="shell32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">w08i/H2vIv6k3hc9zSeCcOPtk+EUBU+GLcY3Bo1wkkY=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="shlwapi.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="shlwapi.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">e7TIUa9quqamEf6szH9l7YJDv2kM4FFnqahypxlA9No=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="usp10.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="usp10.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">p8GUQnPi9d1Dwsqu2XVxuDALFOATRKBOYtSmG/nwnU8=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="wevtapi.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="wevtapi.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">iftGUA1PDblbF6FsPWHImgCrtonVTF2FGgsRObXuAag=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="wtsapi32.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="wtsapi32.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">YPkrscGBjhMlqxFal3rrpdFIpPWp3tbGj4YtaqaW908=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="winspool.drv" destinationPath="$(runtime.system32)\forwarders\" sourceName="winspool.drv" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">ewhWtVlIt7YlGePYK69rRBiBWprqagrSCD3J4dtZFCw=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="xinput1_4.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="xinput1_4.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">YlWevL2h31RTtpH5pfxLD7MaXvlF4jBXB3cq/aZTYcg=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="version.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="version.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">o2Di4Ac1iHCj1es3RMreqFWzjbdQ8SbOa25Qp8ZbIYc=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="winmm.dll" destinationPath="$(runtime.system32)\forwarders\" sourceName="winmm.dll" sourcePath=".\" importPath="$(build.nttree)\onecore\forwarder\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">DnwPjll+P9hTDsvA1nyM/B1BlSHI4O2GgVfdXUc9LDw=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <directories>
+    <directory destinationPath="$(runtime.system32)\Forwarders\" owner="false">
+      <securityDescriptor name="WRP_PARENT_DIR_DEFAULT_SDDL" />
+    </directory>
+  </directories>
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\OneCore">
+      <registryValue name="OCFW_Enabled" valueType="REG_DWORD" value="0x00000001" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)(A;;GRGX;;;S-1-15-2-1)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_PARENT_DIR_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CIOI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CIOI;GRGX;;;SY)(A;CIOI;GRGX;;;BA)(A;CIOI;GRGX;;;BU)(A;CIOI;GRGX;;;S-1-15-2-1)S:(AU;FASA;SDWDWOFW;;;WD)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="CoreSystem Reverse Forwarder DLLs" />
+        <string id="displayName" value="CoreSystem Reverse Forwarder DLLs" />
+      </stringTable>
+    </resources>
+  </localization>
+</assembly>

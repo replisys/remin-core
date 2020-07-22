@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="ReMin-SKU-Foundation-Dep" version="10.0.1337.2" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <deployment xmlns="urn:schemas-microsoft-com:asm.v3" />
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Autochk" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-DeltaCompressionEngine" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Winsrv" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Smss-BootExecute" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Smss" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-StorPort" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-StorPort-RegistrySettings" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-International-CodePage-Core" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-DriverFrameworks-UserMode" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WDF-Usermode Library" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WppRecorderUm" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-System-User-Component" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-System-User-Ext" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-System-User-Service" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-SHCore" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft.Windows.Hardware.Devices.ClassInstaller.KEYBOARD-DriverClass" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Winsock-Legacy" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Console-Driver" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-XmlLite" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Default-TimeZone-Settings" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <!-- wmi -->
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Web-Services-for-Management-Core" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Web-Services-for-Management-WMI-Plugin" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Web-Services-for-Management-Core-Common-Extra" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WinrsPlugins" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Command-Line-Utility" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Command-Line-Utility-Base" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-fastprox-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-Instrumentation" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-ProviderHost" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-reg-folder-settings" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-repdrvfs-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-Svc" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-wbemcomn-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-wbemcore-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Core-wbemess-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Mof" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Scripting" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-stdprov-Provider" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Text-Encoding" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-time-Provider" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-WDM-Provider" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMI-Win32-Provider-Cimwin32-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-Adapter-wmitomi-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-mi-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-miutils-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-PrvdMofComp-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-Register-CimProvider-exe" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WMIV2-wmidcom-dll" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-NetAdapterCim" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-TCPIP-WMIv2Provider" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WhHelper" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Networking-MPSSVC-Svr-Rules-WINRM" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructure-Minkernel" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructure" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureExecutable" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureConsumerCore" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureNonExecutable" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureConsumer" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <!-- start custom stuff -->
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Product-onecore__Microsoft-Windows-International-Core-SortingVersion-Default" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-CoreSystem-LegacyPack-Base" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-CoreSystem-BootableSKU-MergedComponents" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-OneCore-ReverseForwarders" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-CoreSystem-BootableSKU-BootableCoreSystem-Minkernel" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  
+  
+</assembly>

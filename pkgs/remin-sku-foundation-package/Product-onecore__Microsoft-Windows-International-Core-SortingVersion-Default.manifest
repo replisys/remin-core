@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <memberships>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories" version="1.0.0.0" publicKeyToken="365143bb27e7ac8b" typeName="SingleInstanceFiles" />
+    </categoryMembership>
+  </memberships>
+  <assemblyIdentity name="Product-onecore__Microsoft-Windows-International-Core-SortingVersion-Default" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <file name="SortDefault.nls" destinationPath="$(runtime.windows)\Globalization\Sorting\" sourceName="SortDefault.nls" importPath="$(build.nttree)\" sourcePath=".\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AHOVYPH/KyQRsNf84sx6xhQyiAFtbdfCCOfsj6KSsmU=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\Sorting\Versions">
+      <registryValue name="" valueType="REG_SZ" value="00060300" />
+      <registryValue name="000603xx" valueType="REG_SZ" value="kernel32legacy.dll" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\Sorting\Ids">
+      <registryValue name="" valueType="REG_SZ" value="{00000001-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="arn" valueType="REG_SZ" value="{00000012-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="as" valueType="REG_SZ" value="{00000031-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="az" valueType="REG_SZ" value="{00000023-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ba" valueType="REG_SZ" value="{0000003D-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="bg" valueType="REG_SZ" value="{0000004A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="bn" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="bo" valueType="REG_SZ" value="{00000034-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="br" valueType="REG_SZ" value="{0000000F-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="bs" valueType="REG_SZ" value="{00000019-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="co" valueType="REG_SZ" value="{0000000E-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="cs" valueType="REG_SZ" value="{0000001C-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="cy" valueType="REG_SZ" value="{0000002C-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="da" valueType="REG_SZ" value="{0000001F-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="de-DE_phoneb" valueType="REG_SZ" value="{0000003F-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="dv" valueType="REG_SZ" value="{00000045-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="es" valueType="REG_SZ" value="{0000002B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="es-ES_tradnl" valueType="REG_SZ" value="{0000002A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="et" valueType="REG_SZ" value="{00000027-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="fa" valueType="REG_SZ" value="{00000041-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="fi" valueType="REG_SZ" value="{0000001A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="fr" valueType="REG_SZ" value="{00000003-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="fy" valueType="REG_SZ" value="{0000003E-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="gu" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="haw" valueType="REG_SZ" value="{00000002-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="hi" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="hr" valueType="REG_SZ" value="{00000019-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="hsb" valueType="REG_SZ" value="{00000013-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="hu" valueType="REG_SZ" value="{00000004-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="hu-HU_technl" valueType="REG_SZ" value="{00000026-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="is" valueType="REG_SZ" value="{00000025-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ja" valueType="REG_SZ" value="{00000046-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ja-JP_radstr" valueType="REG_SZ" value="{00000036-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ka-GE_modern" valueType="REG_SZ" value="{00000048-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="kk" valueType="REG_SZ" value="{0000000B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="kl" valueType="REG_SZ" value="{0000001F-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="km" valueType="REG_SZ" value="{0000000C-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="kn" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ko" valueType="REG_SZ" value="{00000047-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="kok" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ky" valueType="REG_SZ" value="{0000004A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="lo" valueType="REG_SZ" value="{0000002E-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="lt" valueType="REG_SZ" value="{00000028-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="lv" valueType="REG_SZ" value="{00000005-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="lv-LV_tradnl" valueType="REG_SZ" value="{00000006-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="mi" valueType="REG_SZ" value="{00000014-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="mk" valueType="REG_SZ" value="{0000000A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ml" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="mn" valueType="REG_SZ" value="{0000004A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="moh" valueType="REG_SZ" value="{00000010-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="mr" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="mt" valueType="REG_SZ" value="{0000002D-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="nb" valueType="REG_SZ" value="{00000020-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ne" valueType="REG_SZ" value="{00000033-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="nn" valueType="REG_SZ" value="{00000020-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="no" valueType="REG_SZ" value="{00000020-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="oc" valueType="REG_SZ" value="{00000003-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="or" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="pa" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="pa-Arab" valueType="REG_SZ" value="{00000007-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="pl" valueType="REG_SZ" value="{0000001D-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="prs" valueType="REG_SZ" value="{00000016-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ps" valueType="REG_SZ" value="{00000016-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="quc" valueType="REG_SZ" value="{0000002B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="qut" valueType="REG_SZ" value="{0000002B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="rm" valueType="REG_SZ" value="{00000011-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ro" valueType="REG_SZ" value="{00000024-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ru" valueType="REG_SZ" value="{0000004A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sa" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sah" valueType="REG_SZ" value="{00000009-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sd" valueType="REG_SZ" value="{00000007-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="se" valueType="REG_SZ" value="{00000021-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="se-FI" valueType="REG_SZ" value="{0000001B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="se-SE" valueType="REG_SZ" value="{0000001B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="si" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sk" valueType="REG_SZ" value="{00000029-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sl" valueType="REG_SZ" value="{0000001E-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sma" valueType="REG_SZ" value="{0000001B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sma-NO" valueType="REG_SZ" value="{00000021-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="smj" valueType="REG_SZ" value="{0000001B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="smj-NO" valueType="REG_SZ" value="{00000021-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="smn" valueType="REG_SZ" value="{0000001B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sms" valueType="REG_SZ" value="{0000001B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sq" valueType="REG_SZ" value="{00000018-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sr" valueType="REG_SZ" value="{00000019-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="sv" valueType="REG_SZ" value="{0000001A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="syr" valueType="REG_SZ" value="{00000044-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ta" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="te" valueType="REG_SZ" value="{00000032-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="tg" valueType="REG_SZ" value="{0000004A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="th" valueType="REG_SZ" value="{0000002F-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ti" valueType="REG_SZ" value="{0000003C-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="tk" valueType="REG_SZ" value="{00000008-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="tlh" valueType="REG_SZ" value="{00000042-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="tr" valueType="REG_SZ" value="{00000022-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="tt" valueType="REG_SZ" value="{00000043-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="tzm" valueType="REG_SZ" value="{0000000D-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ug" valueType="REG_SZ" value="{00000017-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="uk" valueType="REG_SZ" value="{00000040-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="ur" valueType="REG_SZ" value="{00000015-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="uz-Cyrl" valueType="REG_SZ" value="{0000004A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="vi" valueType="REG_SZ" value="{00000030-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="wo" valueType="REG_SZ" value="{00000003-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="x-IV_mathan" valueType="REG_SZ" value="{00000035-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh" valueType="REG_SZ" value="{0000003A-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-CN_phoneb" valueType="REG_SZ" value="{0000004B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-CN_stroke" valueType="REG_SZ" value="{00000039-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-HK" valueType="REG_SZ" value="{00000037-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-HK_radstr" valueType="REG_SZ" value="{0000003B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-Hant" valueType="REG_SZ" value="{00000037-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-MO" valueType="REG_SZ" value="{00000037-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-MO_radstr" valueType="REG_SZ" value="{0000003B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-SG_phoneb" valueType="REG_SZ" value="{0000004B-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-SG_stroke" valueType="REG_SZ" value="{00000039-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-TW" valueType="REG_SZ" value="{00000037-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-TW_pronun" valueType="REG_SZ" value="{00000038-57EE-1E5C-00B4-D0000BB1E11E}" />
+      <registryValue name="zh-TW_radstr" valueType="REG_SZ" value="{0000003B-57EE-1E5C-00B4-D0000BB1E11E}" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_PARENT_DIR_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;0x1301bf;;;SY)(A;IOCIOI;GA;;;SY)(A;;0x1301bf;;;BA)(A;IOCIOI;GA;;;BA)(A;CIOI;GRGX;;;BU)(A;OICIIO;GA;;;CO)(A;CIOI;GRGX;;;S-1-15-2-1)(A;CIOI;GRGX;;;S-1-15-2-2)" operationHint="replace" />
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)(A;;GRGX;;;S-1-15-2-1)(A;;GRGX;;;S-1-15-2-2)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <directories>
+    <directory destinationPath="$(runtime.windows)\Globalization\Sorting\" owner="true">
+      <securityDescriptor name="WRP_PARENT_DIR_DEFAULT_SDDL" />
+    </directory>
+  </directories>
+</assembly>

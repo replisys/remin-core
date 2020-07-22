@@ -1,0 +1,3 @@
+[submodule "libs/eps"]
+	path = libs/eps
+	url = https://github.com/straightdave/eps.git

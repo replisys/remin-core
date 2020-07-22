@@ -1,0 +1,18 @@
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="offlineServicing">
+        <component name="Microsoft-Windows-Smss" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Windows>%SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,3072,512 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=coniosrv:ServerDllInitialization,2 ProfileControl=Off MaxRequestThreads=16</Windows>
+            <Kmode />
+        </component>
+		<component name="Microsoft-Windows-Wininit" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<Headless>1</Headless>
+		</component>
+		<component name="Microsoft-Windows-Online-Setup-State-On-Full" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<SetupType>0</SetupType>
+		</component>
+		<component name="Microsoft-Windows-Online-Setup-State-On-Common" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<SystemSetupInProgress>0</SystemSetupInProgress>
+			<OOBEInProgress>0</OOBEInProgress>
+		</component>
+    </settings>
+</unattend>
