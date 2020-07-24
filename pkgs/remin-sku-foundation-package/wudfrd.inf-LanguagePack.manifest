@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" description="$(resourceString.description)" displayName="$(resourceString.displayName)" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." company="Microsoft" creationTimeStamp="2020-03-02T19:29:32" lastUpdateTimeStamp="2020-03-02T19:29:32" buildFilter="">
+  <assemblyIdentity name="wudfrd.inf-LanguagePack" version="10.0.19578.1000" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <deployment xmlns="urn:schemas-microsoft-com:asm.v3" />
+</assembly>

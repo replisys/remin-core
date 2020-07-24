@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assemblyIdentity name="Microsoft-Windows-CoreSystem-BootableSKU-BootableCoreSystem-Mincore" version="10.0.19578.1000" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-CoreSystem-BootableSKU-BootableCoreSystem-Mincore.Resources" version="10.0.19578.1000" processorArchitecture="amd64" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon">
+      <overridable name="FirstUserAccount" scope="Microsoft" type="REG_SZ" />
+      <overridable name="Shell" scope="Microsoft" type="REG_SZ" />
+      <overridable name="ShellInfrastructure" scope="Microsoft" type="REG_SZ" />
+      <overridable name="UserMgrLaunchShell" scope="Microsoft" type="REG_DWORD" />
+      <overridable name="ForceUnlockLogon" scope="Microsoft" type="REG_DWORD" />
+    </registryKey>
+  </registryKeys>
+  <asmv3:configuration xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+    <asmv3:configurationSchema>
+      <xsd:schema xmlns="Microsoft-Windows-CoreSystem-BootableSKU-BootableCoreSystem-Mincore" targetNamespace="Microsoft-Windows-CoreSystem-BootableSKU-BootableCoreSystem-Mincore">
+        <xsd:element default="minshelltext.exe -c %systemroot%\system32\cmd.exe" name="Shell" type="xsd:string" wcm:displayName="Shell" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon')" wcm:legacyType="REG_SZ" wcm:scope="allUsers" />
+        <xsd:element default="" name="ShellInfrastructure" type="xsd:string" wcm:displayName="ShellInfrastructure" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon')" wcm:legacyType="REG_SZ" wcm:scope="allUsers" />
+        <xsd:element default="" name="FirstUserAccount" type="xsd:string" wcm:displayName="FirstUserAccount" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon')" wcm:legacyType="REG_SZ" wcm:scope="allUsers" />
+        <xsd:element default="1" name="UserMgrLaunchShell" type="xsd:integer" wcm:displayName="UserMgrLaunchShell" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" />
+        <xsd:element default="0" name="UserMgrRestartShellOnCrash" type="xsd:integer" wcm:displayName="UserMgrRestartShellOnCrash" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" />
+        <xsd:element default="1" name="ForceUnlockLogon" type="xsd:unsignedInt" wcm:displayName="ForceUnlockLogon" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" />
+      </xsd:schema>
+    </asmv3:configurationSchema>
+  </asmv3:configuration>
+</assembly>

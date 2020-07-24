@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-EditionPack-ServerDatacenterNano-Package" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-Windows-EditionPack-ServerDatacenterNano" releaseType="Feature Pack">
+    <update name="5ae6ba99d585c341b278a318b2b4e1fc">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-NanoServer-Edition-Core-Package" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="7b147e2599c31df43d6d6a81d4de133e">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-NanoServer-Edition-Only-Package" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="704f8ec1b2fe70186c42762826b07dcf">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-EditionPack-OneCore-Package" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

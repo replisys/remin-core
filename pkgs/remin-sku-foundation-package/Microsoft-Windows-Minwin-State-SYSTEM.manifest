@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Minwin-State-SYSTEM" version="10.0.19578.1000" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control">
+      <registryValue name="WaitToKillServiceTimeout" valueType="REG_SZ" value="20000" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\GroupOrderList">
+      <registryValue name="Cryptography" valueType="REG_BINARY" value="03000000010000000200000003000000" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\CodePage">
+      <registryValue name="ACP" valueType="REG_SZ" value="65001" />
+      <overridable name="ACP" scope="Microsoft" type="REG_SZ" />
+      <registryValue name="OEMCP" valueType="REG_SZ" value="65001" />
+      <overridable name="OEMCP" scope="Microsoft" type="REG_SZ" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\Language">
+      <registryValue name="Default" valueType="REG_SZ" value="0409" />
+      <registryValue name="InstallLanguage" valueType="REG_SZ" value="0409" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\Locale">
+      <registryValue name="" valueType="REG_SZ" value="00000409" />
+      <registryValue name="00000409" valueType="REG_SZ" value="1" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager">
+      <registryValue name="EnableMCA" valueType="REG_DWORD" value="0x00000001" />
+      <registryValue name="EnableMCE" valueType="REG_DWORD" value="0x00000000" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\I/O System">
+      <registryValue name="AllowRemoteDASD" valueType="REG_DWORD" value="0x00000000" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\KnownDLLs">
+      <registryValue name="kernelbase" valueType="REG_SZ" value="kernelbase.dll" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Memory Management">
+      <registryValue name="PhysicalAddressExtension" valueType="REG_DWORD" value="0x00000000" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HTTP\Parameters">
+      <registryValue name="DisableServerHeader" valueType="REG_DWORD" value="0x00000001" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HTTP\Parameters\SslBindingInfo" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HTTP\Parameters\Synchronize" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\KSecDD">
+      <registryValue name="Group" valueType="REG_SZ" value="Base" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MountMgr">
+      <registryValue name="NoAutoMount" valueType="REG_DWORD" value="0x00000000" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_REGKEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+</assembly>

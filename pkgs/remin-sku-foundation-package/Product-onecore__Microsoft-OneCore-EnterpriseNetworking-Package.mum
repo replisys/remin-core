@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Product-onecore__Microsoft-OneCore-EnterpriseNetworking-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Product-onecore__Microsoft-OneCore-EnterpriseNetworking" releaseType="Feature Pack">
+    <update name="cbe0eee50f6ab2de12aadefdacac726b">
+      <component>
+        <assemblyIdentity name="Product-onecore__Microsoft-OneCore-EnterpriseNetworking-Deployment" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

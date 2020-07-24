@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assemblyIdentity name="Microsoft-Windows-CoreSystem-Minlogon" version="10.0.19578.1000" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager">
+      <overridable name="NumberOfInitialSessions" scope="Microsoft" type="REG_DWORD" />
+    </registryKey>
+  </registryKeys>
+  <asmv2:configuration xmlns:asmv2="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+    <asmv2:configurationSchema>
+      <xsd:schema xmlns="Microsoft-Windows-CoreSystem-Minlogon" targetNamespace="Microsoft-Windows-CoreSystem-Minlogon">
+        <xsd:element default="2" name="NumberOfInitialSessions" type="xsd:unsignedInt" wcm:description="d__os_obj_amd64fre_temp_9b9448bcfabff56eacc6c0dba4006e14__e3kkrhfvv_microsoft-windows-coresystem-minlogon.man.temp1.missingResource.description" wcm:displayName="d__os_obj_amd64fre_temp_9b9448bcfabff56eacc6c0dba4006e14__e3kkrhfvv_microsoft-windows-coresystem-minlogon.man.temp1.missingResource.displayName" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:element default="#" name="MinlogonCmd" type="xsd:string" wcm:description="d__os_obj_amd64fre_temp_9b9448bcfabff56eacc6c0dba4006e14__e3kkrhfvv_microsoft-windows-coresystem-minlogon.man.temp1.missingResource.description" wcm:displayName="d__os_obj_amd64fre_temp_9b9448bcfabff56eacc6c0dba4006e14__e3kkrhfvv_microsoft-windows-coresystem-minlogon.man.temp1.missingResource.displayName" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Bootsh\Parameters\Commands')" wcm:legacyType="REG_SZ" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+      </xsd:schema>
+    </asmv2:configurationSchema>
+  </asmv2:configuration>
+</assembly>

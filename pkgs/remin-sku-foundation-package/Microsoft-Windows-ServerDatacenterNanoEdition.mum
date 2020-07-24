@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-ServerDatacenterNanoEdition" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Windows ServerDatacenterNano Edition" releaseType="Product">
+    <update name="Microsoft-Windows-Foundation-Package">
+      <package contained="false" integrate="visible">
+        <assemblyIdentity name="Microsoft-Windows-Foundation-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-Product-Data-Package">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Product-Data-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-ServicingStack-Core-Package">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-ServicingStack-Core-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-EditionPack-ServerDatacenterNano-Package">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-EditionPack-ServerDatacenterNano-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-BootEnvironment-BootManagers-Package">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-BootEnvironment-BootManagers-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update description="Delivers the Common Servicing Stack Install Options Package" displayName="Common Servicing Stack Install Options Package" name="CommonServicingInstallOptions">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-ServicingStack-OneCore-InstallOptions-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-Servicing-Full-Package">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Servicing-Full-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-Servicing-Core-X86-Package">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Servicing-Core-X86-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

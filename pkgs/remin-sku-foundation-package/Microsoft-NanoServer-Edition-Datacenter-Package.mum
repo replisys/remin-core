@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-NanoServer-Edition-Datacenter-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-NanoServer-Edition-Datacenter" releaseType="Feature Pack">
+    <update name="d42ceb5ee56ba2150e1663cba9a90443">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-NanoServer-Edition-Datacenter-merged-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="280a58de612cab0e320040842ac9e7f1">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-ApiSetSchema-nanoserver-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="498cce50149f362e8f95b9faa5b1c998">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Branding-ServerDatacenterNano-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="9ae8a2266a811f15f27d387884f07294">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Security-SPP-Component-SKU-ServerDatacenterNano-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+	<servicing>
+		<package action="stage">
+			<assemblyIdentity name="Microsoft-Windows-ServerDatacenterNanoEdition" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+			<source location="<%= $SaveRoot %>\packages\<%= $Version %>\Microsoft-Windows-ServerDatacenterNanoEdition.cab" />
+        </package>
+        <package action="stage">
+			<assemblyIdentity name="Microsoft-Windows-ServerDatacenterNanoEdition-LP" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+			<source location="<%= $SaveRoot %>\packages\<%= $Version %>\en-US\Microsoft-Windows-ServerDatacenterNanoEdition-LP.cab" />
+		</package>
+		<package action="install">
+			<assemblyIdentity name="Microsoft-Windows-ServerDatacenterNanoEdition" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+        </package>
+        <package action="install">
+			<assemblyIdentity name="Microsoft-Windows-ServerDatacenterNanoEdition-LP" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+		</package>
+	</servicing>
+</unattend>

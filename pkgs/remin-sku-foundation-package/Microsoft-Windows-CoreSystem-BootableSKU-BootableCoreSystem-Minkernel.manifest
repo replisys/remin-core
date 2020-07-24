@@ -21,6 +21,16 @@
       <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">arrB6oMnWxNNh6LLOIMWguf6uvWVWHjs4d/cSf7/+sY=</dsig:DigestValue>
     </asmv2:hash>
   </file>
+  <file name="TM-Extension.dll" destinationPath="$(runtime.system32)\" sourceName="TM-Extension.dll" sourcePath=".\" importPath="">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">arrB6oMnWxNNh6LLOIMWguf6uvWVWHjs4d/cSf7/+sY=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
   <memberships>
     <categoryMembership>
       <id name="Microsoft.Windows.Categories.Services" version="10.0.18945.1001" publicKeyToken="31bf3856ad364e35" typeName="Service" />
@@ -30,6 +40,10 @@
     </categoryMembership>
   </memberships>
   <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\ApiSetSchemaExtensions\470705AE-2072-4772-942B-0C49EABE5B0B">
+      <registryValue name="Name" valueType="REG_SZ" value="TM-Extension" />
+      <registryValue name="FileName" valueType="REG_SZ" value="TM-Extension.dll" />
+    </registryKey>
     <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager">
       <registryValue name="NumberOfInitialSessions" valueType="REG_DWORD" value="1" />
     </registryKey>

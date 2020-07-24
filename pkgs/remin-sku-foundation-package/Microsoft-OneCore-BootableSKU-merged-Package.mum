@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-OneCore-BootableSKU-merged-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-OneCore-BootableSKU-merged" releaseType="Feature Pack">
+    <update name="6d46840a5bdaa3a4d1b427ae4c0ebf25" restart="required">
+      <driver inf="uefi.inf" ranking="normal">
+        <assemblyIdentity name="dual_uefi.inf" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="7ede2f10ff1d668849e8b5fc5657bcb3">
+      <component>
+        <assemblyIdentity name="Microsoft-OneCore-BootableSKU-merged-Deployment" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

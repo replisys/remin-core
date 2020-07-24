@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Minwin-State-SOFTWARE" version="10.0.19578.1000" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost">
+      <registryValue name="LocalServiceNetworkRestricted" valueType="REG_MULTI_SZ" value="&quot;DHCP&quot;,&quot;eventlog&quot;,&quot;LmHosts&quot;,&quot;bootsh&quot;,&quot;AudioSrv&quot;" />
+      <registryValue name="LocalServiceNoNetwork" valueType="REG_MULTI_SZ" value="&quot;BFE&quot;,&quot;mpssvc&quot;" />
+      <registryValue name="LocalSystemNetworkRestricted" valueType="REG_MULTI_SZ" value="&quot;hidserv&quot;,&quot;Netman&quot;" />
+      <registryValue name="netsvcs" valueType="REG_MULTI_SZ" value="&quot;gpsvc&quot;,&quot;IKEEXT&quot;,&quot;FastUserSwitchingCompatibility&quot;,&quot;Ias&quot;,&quot;Irmon&quot;,&quot;Nla&quot;,&quot;Ntmssvc&quot;,&quot;NWCWorkstation&quot;,&quot;Nwsapagent&quot;,&quot;Rasauto&quot;,&quot;Rasman&quot;,&quot;Remoteaccess&quot;,&quot;SENS&quot;,&quot;Sharedaccess&quot;,&quot;SRService&quot;,&quot;Tapisrv&quot;,&quot;Wmi&quot;,&quot;WmdmPmSp&quot;,&quot;TermService&quot;,&quot;wuauserv&quot;,&quot;BITS&quot;,&quot;ShellHWDetection&quot;,&quot;LogonHours&quot;,&quot;PCAudit&quot;,&quot;helpsvc&quot;,&quot;uploadmgr&quot;,&quot;sacsvr&quot;,&quot;ProfSvc&quot;" />
+      <registryValue name="NetworkService" valueType="REG_MULTI_SZ" value="&quot;CryptSvc&quot;,&quot;DHCP&quot;,&quot;TermService&quot;,&quot;DNSCache&quot;,&quot;nlasvc&quot;" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_REGKEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="Manifest for MinCore" />
+        <string id="displayName" value="MinCore" />
+      </stringTable>
+    </resources>
+  </localization>
+</assembly>

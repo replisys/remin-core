@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assemblyIdentity name="Product-onecore__Microsoft-Windows-WorkstationService" version="10.0.19578.1000" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly dependencyType="prerequisite">
+      <assemblyIdentity name="Microsoft-Windows-WorkstationService.Resources" version="10.0.19578.1000" processorArchitecture="amd64" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <file name="wkssvc.dll" destinationPath="$(runtime.system32)\" sourceName="wkssvc.dll" importPath="$(build.nttree)\" sourcePath=".\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QQwIcC8VPbSA3G/I5zKCmqo3GbYbGxsWfyU2oxVGd8s=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <memberships>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories.Services" version="10.0.19041.1" publicKeyToken="31bf3856ad364e35" typeName="Service" />
+      <categoryInstance subcategory="lanmanworkstation">
+        <serviceData name="lanmanworkstation" displayName="@%systemroot%\system32\wkssvc.dll,-100" errorControl="normal" start="auto" type="win32ShareProcess" description="@%systemroot%\system32\wkssvc.dll,-101" dependOnService="MRxSmb20,NSI" group="NetworkProvider" imagePath="%SystemRoot%\System32\svchost.exe -k NetworkService -p" objectName="NT AUTHORITY\NetworkService" requiredPrivileges="SeChangeNotifyPrivilege,SeImpersonatePrivilege,SeAuditPrivilege" sidType="unrestricted">
+          <failureActions resetPeriod="86400">
+            <actions>
+              <action delay="60000" type="restartService" />
+              <action delay="120000" type="restartService" />
+              <action delay="0" type="none" />
+            </actions>
+          </failureActions>
+        </serviceData>
+      </categoryInstance>
+    </categoryMembership>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories" version="1.0.0.0" publicKeyToken="365143bb27e7ac8b" typeName="SvcHost" />
+      <categoryInstance subcategory="NetworkService">
+        <serviceGroup position="last" serviceName="lanmanworkstation" />
+      </categoryInstance>
+    </categoryMembership>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories" version="1.0.0.0" publicKeyToken="365143bb27e7ac8b" typeName="Network" />
+      <categoryInstance subcategory="HwOrder\ProviderOrder">
+        <providerOrder name="LanmanWorkstation" position="first" />
+      </categoryInstance>
+      <categoryInstance subcategory="Order\ProviderOrder">
+        <providerOrder name="LanmanWorkstation" position="first" />
+      </categoryInstance>
+    </categoryMembership>
+  </memberships>
+  <networkComponents>
+    <clientDriver bindName="LanmanWorkstation" displayDescription="@%systemroot%\system32\wkssvc.dll,-1011" displayName="@%systemroot%\system32\wkssvc.dll,-1010" identifier="ms_msclient">
+      <bind keyword="winnet5" ruleType="upper" />
+      <bind keyword="netbios" ruleType="lower" />
+      <bind keyword="netbios_smb" ruleType="lower" />
+      <bind keyword="tdi" ruleType="lower" />
+      <property name="NETSETUPPKEY_Driver_NtServiceName" type="string" value="LanmanWorkstation" />
+      <property name="NETSETUPPKEY_INF_Name" type="string" value="Netmscli.inf" />
+      <property name="NETSETUPPKEY_INF_Section" type="string" value="MSClient.ndi" />
+      <property name="NETSETUPPKEY_INF_Characteristics" type="uint32" value="0x80" />
+    </clientDriver>
+  </networkComponents>
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\NetworkProvider\ProviderOrder">
+      <registryValue name="LanmanWorkstation" valueType="REG_DWORD" value="0x000007D0" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters">
+      <overridable name="AccountDomainId" scope="Microsoft" type="REG_SZ" />
+      <registryValue name="ServiceDll" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\wkssvc.dll" />
+      <registryValue name="ServiceDllUnloadOnStop" valueType="REG_DWORD" value="0x00000001" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog\System\Workstation">
+      <registryValue name="EventMessageFile" valueType="REG_SZ" value="$(runtime.system32)\netmsg.dll" />
+      <registryValue name="TypesSupported" valueType="REG_DWORD" value="0x00000007" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\NetworkProvider">
+      <registryValue name="DeviceName" valueType="REG_SZ" value="\Device\LanmanRedirector" />
+      <registryValue name="Name" valueType="REG_SZ" value="Microsoft Windows Network" />
+      <registryValue name="DisplayName" valueType="REG_EXPAND_SZ" value="@%systemroot%\system32\wkssvc.dll,-102" />
+      <registryValue name="ProviderPath" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\ntlanman.dll" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_REGKEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)(A;CI;GR;;;S-1-15-2-1)(A;CI;GR;;;S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681)" operationHint="replace" />
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)(A;;GRGX;;;S-1-15-2-1)(A;;GRGX;;;S-1-15-2-2)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <asmv3:configuration xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+    <asmv3:configurationSchema>
+      <xsd:schema xmlns="Microsoft-Windows-WorkstationService" targetNamespace="Microsoft-Windows-WorkstationService">
+        <xsd:element default="1" name="SyncDomainWithMembership" type="xsd:unsignedInt" wcm:dataOnly="true" wcm:description="SyncDomainWithMembership specifies whether the primary Domain Name Service (DNS) suffix changes when domain membership changes." wcm:displayName="SyncDomainWithMembership" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters')" wcm:passes="specialize" wcm:scope="allUsers" wcm:visible="true" />
+        <xsd:element name="AllowInsecureGuestAuth" type="xsd:unsignedInt" wcm:dataOnly="true" wcm:description="Allow the SMB client to connect to outbound servers as Guest without warning." wcm:displayName="AllowInsecureGuestAuth" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters')" wcm:legacyType="REG_DWORD" wcm:passes="generalize" wcm:scope="allUsers" wcm:visible="true" />
+        <xsd:element name="OtherDomains" type="wcm:multiString" wcm:dataOnly="true" wcm:description="OtherDomains specifies the Microsoft LAN Manager domains to be listed for browsing. Multiple domains can be listed, separated by semicolons." wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters')" wcm:legacyType="REG_MULTI_SZ" wcm:passes="generalize" wcm:scope="allUsers" wcm:visible="true" />
+        <xsd:element default="0" name="EnablePlainTextPassword" type="xsd:unsignedInt" wcm:dataOnly="true" wcm:description="Specifies whether to connect to servers using plaintext password authentication." wcm:displayName="EnablePlainTextPassword" wcm:handler="regkey('HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters')" wcm:passes="specialize" wcm:scope="allUsers" wcm:visible="false" />
+        <xsd:element default="1" name="EnableSecuritySignature" type="xsd:unsignedInt" wcm:dataOnly="true" wcm:description="Specifies whether SMB signing should be turned on against capable servers." wcm:displayName="EnableSecuritySignature" wcm:handler="regkey('HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters')" wcm:passes="specialize" wcm:scope="allUsers" wcm:visible="false" />
+        <xsd:element default="0" name="RequireSecuritySignature" type="xsd:unsignedInt" wcm:dataOnly="true" wcm:description="Specifies whether SMB signing should be turned on against all servers." wcm:displayName="RequireSecuritySignature" wcm:handler="regkey('HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters')" wcm:passes="specialize" wcm:scope="allUsers" wcm:visible="false" />
+      </xsd:schema>
+    </asmv3:configurationSchema>
+  </asmv3:configuration>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="displayName" value="Client for Microsoft Networks" />
+        <string id="description" value="Creates and maintains client network connections to remote servers using the SMB protocol. (ClientCore) (All pieces)" />
+        <string id="displayName1" value="Workstation Service" />
+        <string id="description1" value="Creates and maintains client network connections to remote servers using the SMB protocol. If this service is stopped, these connections will be unavailable. If this service is disabled, any services that explicitly depend on it will fail to start." />
+        <string id="displayName2" value="WRP_FILE_DEFAULT_SDDL" />
+        <string id="description2" value="Default SDDL for Windows Resource Protected file" />
+        <string id="displayName6" value="WRP_REGKEY_DEFAULT_SDDL" />
+        <string id="description7" value="Default SDDL for Windows Resource Protected registry key" />
+        <string id="level.Informational" value="Information" />
+        <string id="level.Critical" value="Critical" />
+      </stringTable>
+    </resources>
+  </localization>
+  <migration ignoreConfigurationSection="Yes" settingsVersion="1">
+    <migXml xmlns="">
+      <rules context="System">
+        <include>
+          <objectSet>
+            <pattern type="File">%windir%\debug [netsetup.log]</pattern>
+            <pattern type="Registry">HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider\ProviderOrder [LanmanWorkstation]</pattern>
+            <pattern type="Registry">HKLM\System\CurrentControlSet\Services\LanmanWorkstation\Parameters [*]</pattern>
+            <pattern type="Registry">HKLM\System\CurrentControlSet\Services\mrxsmb\Parameters [*]</pattern>
+            <pattern type="Registry">HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters [SyncDomainWithMembership]</pattern>
+          </objectSet>
+        </include>
+        <merge script="MigXmlHelper.SourcePriority()">
+          <objectSet>
+            <pattern type="Registry">HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider\ProviderOrder [LanmanWorkstation]</pattern>
+            <pattern type="Registry">HKLM\System\CurrentControlSet\Services\LanmanWorkstation\Parameters [*]</pattern>
+            <pattern type="Registry">HKLM\System\CurrentControlSet\Services\mrxsmb\Parameters [*]</pattern>
+            <pattern type="Registry">HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters [SyncDomainWithMembership]</pattern>
+          </objectSet>
+        </merge>
+      </rules>
+    </migXml>
+    <supportedComponents>
+      <supportedComponent>
+        <assemblyIdentity name="_" version="1.0.0.0" />
+        <supportedComponentIdentity buildType="release" language="neutral" name="Microsoft-Windows-WorkstationService" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" settingsVersionRange="0-1" versionScope="nonSxS" xmlns="urn:schemas-microsoft-com:asm.v3" />
+        <migXml xmlns="">
+          <rules context="System">
+            <merge script="MigXmlHelper.SourcePriority()">
+              <objectSet>
+                <pattern type="Registry">HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider\ProviderOrder [LanmanWorkstation]</pattern>
+                <pattern type="Registry">HKLM\System\CurrentControlSet\Services\LanmanWorkstation\Parameters [*]</pattern>
+                <pattern type="Registry">HKLM\System\CurrentControlSet\Services\mrxsmb\Parameters [*]</pattern>
+                <pattern type="Registry">HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters [SyncDomainWithMembership]</pattern>
+              </objectSet>
+            </merge>
+          </rules>
+        </migXml>
+      </supportedComponent>
+      <supportedComponent>
+        <assemblyIdentity name="_" version="1.0.0.0" />
+        <supportedComponentIdentity buildType="release" language="*" name="Microsoft-Windows-WorkstationService-DL" processorArchitecture="*" publicKeyToken="31bf3856ad364e35" settingsVersionRange="0" versionScope="nonSxS" xmlns="urn:schemas-microsoft-com:asm.v3" />
+        <migXml>
+          <rules>
+            <merge script="MigXmlHelper.SourcePriority()">
+              <objectSet>
+                <pattern type="Registry">HKLM\System\CurrentControlSet\Services\LanmanWorkstation\Parameters [*]</pattern>
+                <pattern type="Registry">HKLM\System\CurrentControlSet\Services\mrxsmb\Parameters [*]</pattern>
+                <pattern type="Registry">HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters [SyncDomainWithMembership]</pattern>
+              </objectSet>
+            </merge>
+          </rules>
+        </migXml>
+      </supportedComponent>
+    </supportedComponents>
+  </migration>
+</assembly>

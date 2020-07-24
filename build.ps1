@@ -21,7 +21,8 @@ Import-Module EPS
 $SourceBuild = "10.0.19041.1"
 $Arch = "amd64"
 
-[Reflection.Assembly]::LoadFile("$PSScriptRoot\Interop.Cmi20.dll")
+[Reflection.Assembly]::LoadFile("$PSScriptRoot\Interop.Cmi20.dll") | Out-Null
+[Reflection.Assembly]::LoadFile("$PSScriptRoot\tools\borderline\bin\x64\Release\netcoreapp3.1\publish\borderline.dll") | Out-Null
 
 $cmiFactory = New-Object Cmi20.CmiFactoryClass
 $serializer = $cmiFactory.CreateObject([Cmi20.CmiObjectType]::cmiSerializer)
@@ -33,7 +34,6 @@ function Get-Keyform {
         $Assembly
     )
 
-    [Reflection.Assembly]::LoadFile("$PSScriptRoot\tools\borderline\bin\x64\Release\netcoreapp3.1\publish\borderline.dll") | Out-Null
     return [string]([borderline.SxSExtract]::CreateAssemblyID(
         $Assembly.Id.Name,
         $Assembly.Id.PublicKeyToken,
@@ -63,6 +63,10 @@ function Convert-Manifest {
     $assembly = $serializer.Deserialize($Manifest)
     $assembly.Id.Version.Value = $SourceBuild
 
+    if ($assembly.Id.Name -eq "Microsoft-OneCore-ReverseForwarders") {
+        #$assembly.Id.Version.Value = "10.0.19041.264"
+    }
+
     $keyform = (Get-Keyform $assembly)
     $fileRoot = "$WorkRoot\Packages\$keyform"
 
@@ -75,12 +79,16 @@ function Convert-Manifest {
 
         $destPath = $environment.Expand($file.DestinationPath)
         $destName = $file.DestinationName
-        $filePath = "$WorkRoot\Docker\Files\$destPath\$destName"
-        if (!(Test-Path $filePath)) {
-            $filePath = "$WorkRoot\SourceOS\1\$destPath\$destName"
+        $filePath = "$PSScriptRoot\pkgs\src\$($assembly.Id.Name)\$destName"
 
+        if (!(Test-Path $filePath)) {
+            $filePath = "$WorkRoot\Docker\Files\$destPath\$destName"
             if (!(Test-Path $filePath)) {
-                throw "Can't find $destPath"
+                $filePath = "$WorkRoot\SourceOS\1\$destPath\$destName"
+
+                if (!(Test-Path $filePath)) {
+                    throw "Can't find $destPath"
+                }
             }
         }
 
@@ -93,6 +101,10 @@ function Convert-Manifest {
 
     foreach ($dependency in $assembly.Dependencies) {
         $dependency.SubObject.DependencyId.Version.Value = $SourceBuild
+
+        if ($dependency.SubObject.DependencyId.Name -eq "Microsoft-OneCore-ReverseForwarders") {
+            #$dependency.SubObject.DependencyId.Version.Value = "10.0.19041.264"
+        }
     }
 
     $outPath = "$WorkRoot\Packages\$keyform.manifest"
@@ -111,6 +123,10 @@ New-Item -Force -ItemType Directory $WorkRoot
 
 $OSPackages = @(
     "Microsoft-Windows-ServicingStack-OneCore-Package",
+    "Microsoft-Windows-Servicing-Core-Package",
+    "Microsoft-Windows-ServicingStack-OneCore-Package",
+    "Microsoft-Windows-ServicingStack-OneCoreadmin-Package",
+    <#"Microsoft-Windows-ServicingStack-OneCore-Package",
     "Microsoft-Windows-Servicing-Core-Package",
     "Microsoft-Windows-ServicingStack-OneCore-Package",
     "Microsoft-Windows-ServicingStack-OneCoreadmin-Package",
@@ -149,7 +165,38 @@ $OSPackages = @(
     "Microsoft-Windows-HyperV-Guest-Package",
     "en-US\Microsoft-Windows-HyperV-Guest-Package",
     "Remin-SKU-Foundation-Package",
-    "en-US\Remin-SKU-Foundation-Package"
+    "en-US\Remin-SKU-Foundation-Package"#>
+
+    "Microsoft-Windows-Common-DriverClasses-Package",
+    "en-US\Microsoft-Windows-Common-DriverClasses-Package",
+    "Microsoft-Windows-Server-Minimal-Drivers-Package",
+    "en-US\Microsoft-Windows-Server-Minimal-Drivers-Package",
+    "Microsoft-Windows-ServerCore-Drivers-Package",
+    "en-US\Microsoft-Windows-ServerCore-Drivers-Package",
+
+    "Microsoft-OneCore-EnterpriseNetworking-Package",
+    "en-US\Microsoft-OneCore-EnterpriseNetworking-Package",
+    "Microsoft-OneCore-Pnp-Full-Package",
+    "en-US\Microsoft-OneCore-Pnp-Full-Package",
+
+    "Microsoft-Windows-CoreSystem-RemoteFS-Package",
+    "en-US\Microsoft-Windows-CoreSystem-RemoteFS-Package",
+    "Microsoft-Windows-RemoteFS-Legacy-Package",
+
+    "Microsoft-Windows-ServerDatacenterNanoEdition",
+    "en-US\Microsoft-Windows-ServerDatacenterNanoEdition-LP",
+
+    "Microsoft-Windows-Online-Setup-State-Full-Package",
+    "en-US\Microsoft-Windows-Online-Setup-State-Full-Package",
+
+    "Microsoft-OneCore-Transactions-Package",
+    "en-US\Microsoft-OneCore-Transactions-Package",
+
+    "Remin-SKU-Foundation-Package",
+    "en-US\Remin-SKU-Foundation-Package",
+
+    "Microsoft-Windows-HyperV-Guest-Package",
+    "en-US\Microsoft-Windows-HyperV-Guest-Package"
 )
 
 function Resolve-PackageName {
@@ -172,8 +219,13 @@ function Resolve-PackageName {
 }
 
 function Get-HasOSPackages {
-    return (Test-Path $SaveRoot\packages\$SourceBuild)
-    #return $false
+    foreach ($package in $OSPackages) {
+        if (!(Test-Path "$SaveRoot\packages\$SourceBuild\$package.cab")) {
+            return $false
+        }
+    }
+
+    return $true
 }
 
 function Get-DockerContainer {
@@ -207,7 +259,7 @@ function Build-OSPackages {
         #Invoke-Expression "dism /apply-image /imagefile:$isoRoot\sources\install.wim /index:1 /applydir:$WorkRoot\SourceOS"
 
         # enable
-        #Invoke-Expression "7z x -o$WorkRoot\SourceOS $isoRoot\sources\install.wim 1"
+        Invoke-Expression "7z x -o$WorkRoot\SourceOS $isoRoot\sources\install.wim 1"
 
         foreach ($manifest in Get-ChildItem $WorkRoot\Packages\*.manifest) {
             Copy-Item -Force $manifest.FullName "$WorkRoot\SourceOS\1\Windows\WinSxS\Manifests\${$manifest.Name}"
@@ -219,11 +271,13 @@ function Build-OSPackages {
 
         foreach ($file in Get-ChildItem $PSScriptRoot\pkgs\remin-sku-foundation-package\*.mum) {
             $data = (Invoke-EpsTemplate -Path $file.FullName -Safe -Binding @{ Version = $SourceBuild })
+            $data | Out-File -Encoding utf8NoBOM -FilePath "$env:TEMP\manifest.txt"
 
-            $pn = $file.Name -replace ".mum", ""
+            $assembly = $serializer.Deserialize("$env:TEMP\manifest.txt")
+            $pn = $assembly.Id.Name
 
-            if ($pn -eq "Remin-SKU-Foundation-Package-en-US") {
-                $pn = "en-US\Remin-SKU-Foundation-Package"
+            if ($assembly.Id.Language -ne "neutral") {
+                $pn = "en-US\$pn"
             }
 
             $pn = Resolve-PackageName $pn
@@ -383,6 +437,7 @@ try {
     Initialize-Disk -Number $pdn -PartitionStyle GPT
     $sysPart = New-Partition -DiskNumber $pdn -Size 350MB
     $sysPart | Format-Volume -FileSystem FAT32
+    $spn = $sysPart.PartitionNumber
 
     $vol = New-Partition -DiskNumber $pdn -UseMaximumSize
     $vol | Format-Volume -FileSystem NTFS
@@ -407,7 +462,7 @@ try {
     }
 
     $actualPkgs = @(
-        "Microsoft-Windows-Foundation-Group-merged-Package.cab",
+        <#"Microsoft-Windows-Foundation-Group-merged-Package.cab",
         "en-US\Microsoft-Windows-Foundation-Group-merged-Package.cab",
         "Microsoft-Windows-BootEnvironment-BootManagers-Package.cab",
         "en-US\Microsoft-Windows-BootEnvironment-BootManagers-Package.cab",
@@ -437,12 +492,46 @@ try {
         "Microsoft-OneCore-Console-Host-Package.cab",
         "en-US\Microsoft-OneCore-Console-Host-Package.cab",
         "Microsoft-NanoServer-Edition-Core-Package.cab",
-        "en-US\Microsoft-NanoServer-Edition-Core-Package.cab",
+        "en-US\Microsoft-NanoServer-Edition-Core-Package.cab",#>
+        
+        #"Microsoft-Windows-ServerDatacenterNanoEdition.cab",
+        #"en-US\Microsoft-Windows-ServerDatacenterNanoEdition.cab",
+        "Microsoft-Windows-Online-Setup-State-Full-Package.cab",
+        "en-US\Microsoft-Windows-Online-Setup-State-Full-Package.cab",
+
+        "Microsoft-Windows-Common-DriverClasses-Package.cab",
+        "en-US\Microsoft-Windows-Common-DriverClasses-Package.cab",
+        "Microsoft-Windows-Server-Minimal-Drivers-Package.cab",
+        "en-US\Microsoft-Windows-Server-Minimal-Drivers-Package.cab",
+        "Microsoft-Windows-ServerCore-Drivers-Package.cab",
+        "en-US\Microsoft-Windows-ServerCore-Drivers-Package.cab",
+
+        "Microsoft-OneCore-Transactions-Package.cab",
+        "en-US\Microsoft-OneCore-Transactions-Package.cab",
+
+        "Microsoft-OneCore-EnterpriseNetworking-Package.cab",
+        "en-US\Microsoft-OneCore-EnterpriseNetworking-Package.cab",
+        "Microsoft-OneCore-Pnp-Full-Package.cab",
+        "en-US\Microsoft-OneCore-Pnp-Full-Package.cab",
+
+        "Microsoft-Windows-CoreSystem-RemoteFS-Package.cab",
+        "en-US\Microsoft-Windows-CoreSystem-RemoteFS-Package.cab",
+        "Microsoft-Windows-RemoteFS-Legacy-Package.cab",
+
         "Remin-SKU-Foundation-Package.cab",
         "en-US\Remin-SKU-Foundation-Package.cab",
         "Microsoft-Windows-HyperV-Guest-Package.cab",
         "en-US\Microsoft-Windows-HyperV-Guest-Package.cab"
     )
+
+    Invoke-EpsTemplate -Path $PSScriptRoot\editionpack.xml -Safe -Binding @{ Version = $SourceBuild; SaveRoot = $SaveRoot } `
+        | Out-File -Encoding utf8NoBOM -FilePath $WorkRoot\editionpack.xml
+
+    dism /image:$TargetRoot\ /apply-unattend:$WorkRoot\editionpack.xml
+
+    if (!$?) {
+        throw "failed to apply edition";
+    }
 
     $string = @()
 
@@ -451,6 +540,10 @@ try {
     }
 
     & dism /image:$TargetRoot\ /add-package @string
+
+    if (!$?) {
+        throw "failed to apply post-edition packages";
+    }
 
     # post-install, we add catroot files
     $cats = @(
@@ -471,6 +564,8 @@ try {
             }
         }
 
+        $pn = $pn -replace "\.cat", "-RM.cat"
+
         Copy-Item -Force $filePath $TargetRoot\$pn
     }
 
@@ -479,13 +574,30 @@ try {
     # SMI/WCM probably doesn't allow removing an entry, so we manually remove kmode
     try {
         reg.exe load HKLM\TempSystem $TargetRoot\Windows\System32\config\SYSTEM
+
+        # pretend we're WTG so we don't try to break firmware boot order
+        Set-ItemProperty -Path "HKLM:\TempSystem\ControlSet001\Control" -Name "PortableOperatingSystem" -Value 1 -Type DWord
+
         Remove-ItemProperty -Path "HKLM:\TempSystem\ControlSet001\Control\Session Manager\SubSystems" -Name "Kmode"
     } finally {
         reg.exe unload HKLM\TempSystem
     }
 
-    $sysPart | Set-Partition -NewDriveLetter X
-    $sysRoot = "X:"
+    # KTM won't load with Nano Server apisetschema (no tm.sys reference), and WCP expects this for servicing normally
+    <#try {
+        reg.exe load HKLM\TempSoftware $TargetRoot\Windows\System32\config\SOFTWARE
+        Set-ItemProperty -Path "HKLM:\TempSoftware\Microsoft\Windows\CurrentVersion\SideBySide" -Name "DisableKernelTransactions" -Value 1 -Type DWord
+    } finally {
+        reg.exe unload HKLM\TempSoftware
+    }#>
+
+    $sysPart | Set-Partition -NewDriveLetter Z
+    $sysRoot = "Z:"
+
+    #New-Item -ItemType Directory $TargetRoot\tmp
+    #Copy-Item -Force "$env:TEMP\u.msu" $TargetRoot\tmp\u.msu
+
+    #TODO: patched msxml6
 
     Copy-Item -Force $TargetRoot\windows\system32\boot\winload.efi $TargetRoot\windows\system32
     Copy-Item -Force $TargetRoot\windows\system32\boot\en-us\winload.efi.mui $TargetRoot\windows\system32\en-us
@@ -496,9 +608,31 @@ try {
     bcdedit /store $sysRoot\efi\Microsoft\boot\bcd /set '{default}' testsigning on
     bcdedit /store $sysRoot\efi\Microsoft\boot\bcd /set '{bootmgr}' device hd_partition=$sysRoot
     bcdedit /store $sysRoot\efi\Microsoft\boot\bcd /set '{default}' debug off
-    bcdedit /store $sysRoot\efi\Microsoft\boot\bcd /dbgsettings serial debugport:1 baudrate:115200
+    #bcdedit /store $sysRoot\efi\Microsoft\boot\bcd /dbgsettings net hostip:0.0.0.0 port:50000 key:1.2.3.4
     bcdedit /store $sysRoot\efi\Microsoft\boot\bcd /set '{default}' bootdebug off
     bcdedit /store $sysRoot\efi\Microsoft\boot\bcd /set '{bootmgr}' bootdebug off
+
+    # to be able to load apisetschema forks (so online servicing can work)
+    & "$env:WINDIR\system32\curl.exe" -Lo "$WorkRoot\EfiGuard-v1.1.zip" "https://github.com/Mattiwatti/EfiGuard/releases/download/v1.1/EfiGuard-v1.1.zip"
+    Push-Location $WorkRoot
+    & "$env:WINDIR\system32\tar.exe" -xf "EfiGuard-v1.1.zip"
+    & "$env:WINDIR\system32\curl.exe" -Lo "$sysRoot\EFI\boot\bootx64.efi" "https://github.com/tianocore/edk2/blob/edk2-stable201903/ShellBinPkg/UefiShell/X64/Shell.efi?raw=true"
+
+    @"
+load fs0:\efi\boot\efiguarddxe.efi
+fs0:\efi\microsoft\boot\bootmgfw.efi
+"@ | Out-File -Encoding utf8NoBOM "$sysRoot\startup.nsh"
+
+    # this doesn't correctly chainload
+    #Copy-Item -Force "EfiGuard-v1.1\EFI\Boot\Loader.efi" "$sysRoot\efi\boot\bootx64.efi"
+    Copy-Item -Force "EfiGuard-v1.1\EFI\Boot\EfiGuardDxe.efi" "$sysRoot\efi\boot\EfiGuardDxe.efi"
+    Pop-Location
+
+    @"
+select disk $pdn
+select partition $spn
+set id=c12a7328-f81f-11d2-ba4b-00a0c93ec93b
+"@ | diskpart.exe
 } finally {
     Dismount-DiskImage -ImagePath "$SaveRoot\OS.vhdx"
 }

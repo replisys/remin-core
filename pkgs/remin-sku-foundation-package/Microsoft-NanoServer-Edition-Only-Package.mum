@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-NanoServer-Edition-Only-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-NanoServer-Edition-Only" releaseType="Feature Pack">
+    <update name="874202b35e791af3ee4aa02cd2615787">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-NanoServer-Edition-Only-merged-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="f8fa21bd5c1f7b69c369ffb2c18e01f4">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-NanoServer-EmergencyManagementShell-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="e8082e86e406f653272d5967c780aff6">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-OneCore-CoreSysCRT120-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="3fb8e9f27c22d0db56e3ab1360a4d450">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Product-onecore__Microsoft-OneCore-EnterpriseNetworking-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="2a136025b831516d4ea45bc20f4ef1a2">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-CoreSystem-TaskScheduler-Core-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="269388f59efbe340fdf608e85f8c0b0b">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Product-onecore__Microsoft-Windows-CoreSystem-WINNLS-Core-Custom-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="5e30066729ea9240fdf932042304fe82">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-WindowsDeviceCensus-Schedule-Nanoserver-Package-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

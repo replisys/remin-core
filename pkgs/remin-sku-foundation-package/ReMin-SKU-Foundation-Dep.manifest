@@ -322,7 +322,7 @@
   <!-- start custom stuff -->
   <dependency discoverable="yes">
     <dependentAssembly dependencyType="install">
-      <assemblyIdentity name="Product-onecore__Microsoft-Windows-International-Core-SortingVersion-Default" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      <assemblyIdentity name="Microsoft-Windows-International-Core-SortingVersion-Default" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
     </dependentAssembly>
   </dependency>
   
@@ -350,5 +350,28 @@
     </dependentAssembly>
   </dependency>
   
-  
+  <!--<dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-ApiSetSchema-server" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>-->
+
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-NTOSEXT" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WinsrvExt" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+
+  <!-- ... really gotta do something about apisetschema -->
+  <!--<dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Win32k" version="10.0.18945.1001" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>-->
 </assembly>

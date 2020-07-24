@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-OneCore-Common-DriverClasses-merged-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-OneCore-Common-DriverClasses-merged" releaseType="Feature Pack">
+<!--    <update name="419381f3730c4614f719ba3029d90254" restart="required">
+      <driver inf="c_extension.inf" ranking="normal">
+        <assemblyIdentity name="Product-onecore__dual_c_extension.inf" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="34eaec76a51f0010672c3a62fe7190d6" restart="required">
+      <driver inf="c_image.inf" ranking="normal">
+        <assemblyIdentity name="Product-onecore__dual_c_image.inf" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="c33d979a1777c42953f7fb601ee3ae7f" restart="required">
+      <driver inf="c_net.inf" ranking="normal">
+        <assemblyIdentity name="Product-onecore__dual_c_net.inf" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="9e1508242188410c1aa233704f5681ab" restart="required">
+      <driver inf="c_netservice.inf" ranking="normal">
+        <assemblyIdentity name="Product-onecore__dual_c_netservice.inf" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="4e3b847bcf68ea9fdba32bb0a6e3b32e" restart="required">
+      <driver inf="c_nettrans.inf" ranking="normal">
+        <assemblyIdentity name="Product-onecore__dual_c_nettrans.inf" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>-->
+  </package>
+</assembly>

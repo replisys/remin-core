@@ -426,6 +426,7 @@ namespace borderline
             if (FileList.Count == 0)
             {
                 LogError("Couldn't find a matching manifest.");
+                Environment.Exit(69);
                 return false;
             }
 
@@ -516,6 +517,7 @@ namespace borderline
                         else
                         {
                             LogError("Appear to have loaded the wrong manifest - skipping.");
+                            Environment.Exit(69);
                         }
                     }
                 }

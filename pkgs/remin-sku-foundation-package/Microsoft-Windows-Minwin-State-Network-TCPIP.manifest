@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Minwin-State-Network-TCPIP" version="10.0.19578.1000" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Parameters">
+      <registryValue name="DeadGWDetectDefault" valueType="REG_DWORD" value="0x00000001" />
+      <registryValue name="DontAddDefaultGatewayDefault" valueType="REG_DWORD" value="0x00000000" />
+      <registryValue name="EnableICMPRedirect" valueType="REG_DWORD" value="0x00000001" />
+      <registryValue name="Hostname" valueType="REG_SZ" value="minwinpc" />
+      <registryValue name="NV Hostname" valueType="REG_SZ" value="minwinpc" />
+      <registryValue name="UseDomainNameDevolution" valueType="REG_DWORD" value="0x00000001" />
+      <registryValue name="Domain" valueType="REG_SZ" value="" />
+      <registryValue name="SearchList" valueType="REG_SZ" value="" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\tcpip\Parameters\DNSRegisteredAdapters" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\tcpip\Performance">
+      <registryValue name="Close" valueType="REG_SZ" value="CloseTcpIpPerformanceData" />
+      <registryValue name="Collect" valueType="REG_SZ" value="CollectTcpIpPerformanceData" />
+      <registryValue name="Library" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\Perfctrs.dll" />
+      <registryValue name="Object List" valueType="REG_SZ" value="502 510 546 548 582 638 658 1530 1532 1534" />
+      <registryValue name="Open" valueType="REG_SZ" value="OpenTcpIpPerformanceData" />
+    </registryKey>
+  </registryKeys>
+</assembly>

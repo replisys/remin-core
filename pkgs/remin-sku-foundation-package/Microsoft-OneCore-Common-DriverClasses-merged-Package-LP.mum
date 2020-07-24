@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-OneCore-Common-DriverClasses-merged-Package" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-OneCore-Common-DriverClasses-merged-en-US" releaseType="Language Pack">
+    <parent disposition="detect">
+      <assemblyIdentity name="Microsoft-OneCore-Common-DriverClasses-merged-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </parent>
+    <!--<update name="419381f3730c4614f719ba3029d90254">
+      <component>
+        <assemblyIdentity name="Product-onecore__c_extension.inf-LanguagePack" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="34eaec76a51f0010672c3a62fe7190d6">
+      <component>
+        <assemblyIdentity name="Product-onecore__c_image.inf-LanguagePack" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="c33d979a1777c42953f7fb601ee3ae7f">
+      <component>
+        <assemblyIdentity name="Product-onecore__c_net.inf-LanguagePack" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="9e1508242188410c1aa233704f5681ab">
+      <component>
+        <assemblyIdentity name="Product-onecore__c_netservice.inf-LanguagePack" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="4e3b847bcf68ea9fdba32bb0a6e3b32e">
+      <component>
+        <assemblyIdentity name="Product-onecore__c_nettrans.inf-LanguagePack" version="<%= $Version %>" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>-->
+  </package>
+</assembly>

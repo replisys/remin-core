@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Product-onecore__Microsoft-Windows-CoreSystem-WINNLS-Core-Custom-Package" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-Windows-CoreSystem-WINNLS-Core-Custom" releaseType="Feature Pack">
+    <update name="33b6d9fff10c6041c59ad3e4f72b32cd">
+      <component>
+        <assemblyIdentity name="Microsoft-Windows-CoreSystem-WINNLS-Core-Custom-Deployment" version="<%= $Version %>" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>
