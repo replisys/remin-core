@@ -9,10 +9,11 @@ ReMin aims to replicate MinWin/bare-metal Nano Server based on current Windows b
 
 ## How to run
 1. Ensure you have `en_windows_server_version_2004_x64_dvd_765aeb22.iso`.
-2. Install PowerShell 7 or above on modern Windows 10.
-3. Make sure `V:\` and `X:\` are not currently mounted to a volume.
-4. From an elevated `pwsh`, run `.\build.ps1 -IsoPath "A:\en_windows_server_version_2004_x64_dvd_765aeb22.iso" -SaveRoot "A:\OS\Save" -WorkRoot "A:\OS\Work"`, replacing paths with the path to the ISO and a save directory.
-5. You should have `A:\OS\Save\OS.vhdx` if it completed successfully, which _should_ boot in Hyper-V, other hypervisors, or bare metal if applying correctly.
+2. Build the tools using `build.cmd` in their respective directories. Yeah.
+3. Install PowerShell 7 or above on modern Windows 10.
+4. Make sure `V:\` and `X:\` are not currently mounted to a volume.
+5. From an elevated `pwsh`, run `.\build.ps1 -IsoPath "A:\en_windows_server_version_2004_x64_dvd_765aeb22.iso" -SaveRoot "A:\OS\Save" -WorkRoot "A:\OS\Work"`, replacing paths with the path to the ISO and a save directory.
+6. You should have `A:\OS\Save\OS.vhdx` if it completed successfully, which _should_ boot in Hyper-V, other hypervisors, or bare metal if applying correctly.
 
 ## Known issues
 * `msxml6` will crash due to an incorrect `urlmon` stub in `kernelbase`.
